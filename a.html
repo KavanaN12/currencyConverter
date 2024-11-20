@@ -1,0 +1,70 @@
+<!-- For addition of new country,
+    add currency name in the selection boxes of both from and to dropdown containers,
+    followed by its rate with respect to USD in map fcvalue-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="Curr_Con.css" rel="stylesheet">
+<link>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="ammount">
+                <p>Enter Ammount</p>
+                <input placeholder="100" type="number" id="Envalue" min="1" value="100">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <select name="from" id="fcountry">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="JPY">JPY</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="CNH">CNH</option>
+                            <option value="SEK">SEK</option>
+                            <option value="NZD">NZD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="">
+                        <select name="to" id="tcountry">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="JPY">JPY</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="CNH">CNH</option>
+                            <option value="SEK">SEK</option>
+                            <option value="NZD">NZD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p id="msg">1 USD = 83.33 INR</p>
+            <button id="butn" onclick="addNew()" type="button">Get Exchange Rate</button>
+            <div class="ExRate">
+                <p>Exchange Rate:</p>
+                <p id="Exrate">8333.00</p>
+            </div>
+        </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
